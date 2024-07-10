@@ -1,0 +1,42 @@
+// Modify the code from the previous example. Assume that the prices of flowers
+// will be constant (they will not change). Declare and initialize the remaining
+// variables in the same way as in the previous example. Display all the gathered
+// information in the console. Now decrease the number of roses by 20 and lilies by
+// 30. Display all the collected information in the console again.
+
+
+const roseCost = 8 ;
+const lilyCost = 10 ;
+const tulipCost = 2 ;
+ 
+let n_rose = 70  ;
+let n_lily = 50 ;
+let n_tulip = 120 ;
+
+let value_Rose = roseCost * n_rose;
+let value_lily = lilyCost * n_lily;
+let value_tulip = tulipCost * n_tulip;
+
+let totalValue = value_Rose + value_lily + value_tulip;
+
+console.log("Rose – unit price: "+ roseCost +" , quantity: "+n_rose+" , value: "+value_Rose);
+console.log("Lily – unit price: "+ lilyCost +" , quantity: "+n_lily+" , value: "+value_lily);
+console.log("Tulip – unit price: "+ tulipCost +" , quantity: "+n_tulip+" , value: "+value_tulip);
+console.log("Total: "+totalValue);
+
+
+
+n_rose = n_rose - 20 ;
+n_lily = n_lily - 30 ;
+
+
+value_Rose = roseCost * n_rose;
+value_lily = lilyCost * n_lily;
+value_tulip = tulipCost * n_tulip;
+
+totalValue = value_Rose + value_lily + value_tulip;
+
+console.log("Rose – unit price: "+ roseCost +" , quantity: "+n_rose+" , value: "+value_Rose);
+console.log("Lily – unit price: "+ lilyCost +" , quantity: "+n_lily+" , value: "+value_lily);
+console.log("Tulip – unit price: "+ tulipCost +" , quantity: "+n_tulip+" , value: "+value_tulip);
+console.log("Total: "+totalValue);
