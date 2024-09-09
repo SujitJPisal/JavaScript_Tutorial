@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+
+<body>
+    <input id="myId" type="text">
+    </input>
+    <button onClick="console.log(document.getElementById('myId').value)">
+        Get Text
+
+
+
+        <script>
+            alert("Hello, World!");
+            window.alert("Hello, World! For the second time");
+            alert(4*7);
+            alert(true);
+            alert("text 1", "text 2");
+
+
+            let remove = confirm("Remove all data?");
+            let message = remove ? "Deleting Data" : "Cancelled";
+            console.log(message);
+
+            let name = window.prompt("What is your name?", "John Doe");
+            name = name ? name : "anonymous";
+
+            let age = prompt("Hello "+ name + " How old are you?");
+            alert(name + " is "+ age + " years old");
+
+        </script>
+
+    </button>
+    
+    
+</body>
+</html>
