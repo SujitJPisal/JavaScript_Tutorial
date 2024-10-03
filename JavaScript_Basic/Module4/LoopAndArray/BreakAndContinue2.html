@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let gate = prompt("Choose gate: a, b, or c");
+        let win = false;
+        switch (gate) 
+        {
+            case "a":
+                alert("Gate A: empty");
+            case "b":
+                alert("Gate B: main prize");
+                win = true;
+            case "c":
+                alert("Gate C: empty");
+                default:
+                alert("No gate " + String(gate));
+        }
+
+
+        if (win) 
+        {
+            alert("Winner!");
+        }
+
+
+        let grade;
+        switch (true) {
+            case (score >= 90):
+                grade = 'A';
+                break;
+            case (score >= 80):
+                grade = 'B';
+                break;
+            case (score >= 70):
+                grade = 'C';
+                break;
+            case (score >= 60):
+                grade = 'D';
+                break;
+            case (score < 60):
+                grade = 'F';
+                break;
+            default:
+                grade = 'Invalid score';
+        }
+        console.log(grade);
+
+
+    </script>
+    
+</body>
+</html>

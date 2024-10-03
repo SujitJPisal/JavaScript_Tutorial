@@ -1,0 +1,34 @@
+<!-- Write a script that will ask the user to input a number.
+Display the message "Bingo!" when the number is greater
+than 90 but less than 110, otherwise display the message:
+"Miss". Use the if statement. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let input = Number(prompt("Enter any number"));
+
+        if(input > 90 && input < 110)
+        {
+            alert("Bingo!");
+
+        }
+        else{
+            alert("Miss");
+        }
+
+
+    //Rewrite the code from the previous task, replacing if with a ternary conditional operator.
+
+    alert( input>90 && input<110 ? "Bingo!" : "Miss" );
+
+
+    </script>
+</body>
+</html>
