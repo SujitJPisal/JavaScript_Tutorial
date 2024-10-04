@@ -1,0 +1,34 @@
+<!-- 
+ Modify the previous program so that it
+asks the user for the first and last number
+it uses instead of 100 and 0 (hint: use the
+prompt dialog). Check if the entered
+values are correct (that the initial value is
+greater than the final value). 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let start = prompt('Enter start number : ');
+        let end = prompt('Enter last number : ');
+        let listOfNumber = '';
+                    
+        for(let i = end; i >= start ; i -= 10)
+        {           
+            console.log(i);
+            listOfNumber = listOfNumber + ' , ' + i;
+        }
+
+        alert(listOfNumber);
+
+    </script>
+</body>
+</html>
+

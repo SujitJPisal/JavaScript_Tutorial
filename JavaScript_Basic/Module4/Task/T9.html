@@ -1,0 +1,84 @@
+<!-- Modify the calculator program that you made in Module 4 Section 2 
+in such a way that it will work in the loop 
+until the user inputs Q in any of the prompt boxes. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let isContinue = confirm("Do you want to continue?");
+        console.log("isContinue : "+isContinue);
+
+        while(isContinue)
+        {
+            debugger;
+
+            let number1 = prompt("Enter your first number ");    
+            let number2 = prompt("Enter your Second number ");  
+
+            if(number1 == 'Q' || number2 == 'Q')
+            {
+                break;                
+            }
+            else{
+
+                number1 = Number(number1);
+                number2 = Number(number2);
+
+            }
+  
+            
+            let operation = prompt("Enter Operation to perform (+, -, *, /)");
+            let answer = 0;
+            if(!Number.isNaN(number1) && !Number.isNaN(number2) )
+            {
+                switch(operation){
+
+                    case '+' : answer = number1 + number2 ; break;
+                    case '-' : answer = number1 - number2; break;
+                    case '*' : answer = number1 * number2; break;
+                    case '/' : answer = number1 / number2; break;
+                    case 'Q' : ; break;
+                    default : alert("Wrong Operator "); continue;
+                    
+                }
+
+                if(operation!= 'Q' && answer > 0)
+                {
+                    alert("Answer is : "+ answer);
+                }
+                else if (operation == 'Q')
+                {
+                    isContinue = false
+                }
+                else
+                {
+                    alert("Zero");
+                }
+            }
+            else{
+                alert("Enter valid numbers");
+            }
+
+            if(isContinue)
+            {
+                isContinue = confirm("Do you want to continue?");
+
+            }
+        }
+        
+
+
+    </script>
+
+    
+
+
+</body>
+</html>
