@@ -14,7 +14,7 @@
 
  
 function div(a, b){
-    
+     
     if(b == 0)
     {
         throw new RangeError('Dinominator can not be zero');        
